@@ -49,6 +49,10 @@ npm run dev
 ```
 The server will start on `http://localhost:3000`.
 
+**Note**: You can seed a demo user by running `node seed.js` inside the `backend` directory.
+- **Username**: `Om Mali`
+- **Password**: `password123`
+
 #### 2. Start the Frontend
 ```bash
 cd frontend
