@@ -26,39 +26,31 @@ A full-stack file management application built with React (Frontend) and Node.js
    cd File-Management-System
    ```
 
-2. **Install Backend Dependencies**
+2. **Install All Dependencies**
+   Run the following command in the root directory to install dependencies for the root, backend, and frontend:
    ```bash
-   cd backend
-   npm install
-   ```
-
-3. **Install Frontend Dependencies**
-   ```bash
-   cd ../frontend
-   npm install
+   npm run install-all
    ```
 
 ### Running the Application
 
-You will need two terminal windows open: one for the backend and one for the frontend.
-
-#### 1. Start the Backend
+#### Easy Start (Both Servers)
+Run the following command in the root directory:
 ```bash
-cd backend
 npm run dev
 ```
-The server will start on `http://localhost:3000`.
+This will start:
+- **Backend**: `http://localhost:3000`
+- **Frontend**: `http://localhost:5173`
 
-**Note**: You can seed a demo user by running `node seed.js` inside the `backend` directory.
+#### Individual Starts
+If you prefer to start them separately:
+- **Backend only**: `npm run start-backend`
+- **Frontend only**: `npm run start-frontend`
+
+**Note**: You can seed a demo user by running `npm run seed` in the root directory.
 - **Username**: `Om Mali`
 - **Password**: `password123`
-
-#### 2. Start the Frontend
-```bash
-cd frontend
-npm run dev
-```
-The application will be available at `http://localhost:5173`.
 
 ## Folder Structure
 - `/backend`: Express server, database configuration, and file upload logic.
